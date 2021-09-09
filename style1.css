@@ -59,6 +59,7 @@ a {
 .navbar__menu li:hover {
   background-color: var(--accent-color);
   border-radius: 4px;
+  opacity: 0.7;
 }
 .navbar__icons {
   list-style: none;
@@ -162,15 +163,17 @@ a {
     text-align: center;
   }
 
- 
+
  .알림글{
-   color: honeydew;
+   color: white;
    text-align: center;
    display: flex;
    justify-content: center;
    padding: 30px 0px;
    font-size: 1.5rem;
    text-shadow: 2px 2px 1px gray;
+
+   
  }
 .알림내용{
   color: white;
@@ -179,11 +182,61 @@ a {
   position: center;
   padding-left: 15%;
   padding-right: 15%;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
 }
 
+.준수사항{
+  color: white;
+  text-align: justify;
+  position: center;
+  padding-left: 25%;
+  padding-right: 15%;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+table{
+  text-align: center;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-collapse: collapse;
+
+}
+caption{
+  color: white;
+   text-align: center;
+   padding: 30px 0px;
+   font-size: 1.5rem;
+   text-shadow: 2px 2px 1px gray;
+ 
+}
+
+table{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+td{
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding:5px 10px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.39);
 
 
+}
 
+th{
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.767);
+
+}
 
   .foot {
     background-color: var(--background-color);
@@ -196,4 +249,5 @@ a {
     width: 100%;
     margin: 0px;
     padding: 0px;
+  }
 
