@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro";
+  background: black;
 }
 
 a {
@@ -128,14 +129,12 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 
-    opacity: 0.95;
-    filter: grayscale(100%);
-   
-    
+    /* opacity: 0.95;
+    filter: grayscale(100%); */
   }
 
   .show-1 {
-    background-image: url(0.jpg);
+    background-image: url(11.jpg);
   }
   /* .show-2 {
     background-image: url(6.jpg);
@@ -163,80 +162,70 @@ a {
     text-align: center;
   }
 
+  .알림글 {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px gray;
+  }
+  .알림내용 {
+    color: white;
+    text-align: justify;
+    text-align: left;
+    position: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
 
- .알림글{
-   color: white;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   padding: 30px 0px;
-   font-size: 1.5rem;
-   text-shadow: 2px 2px 1px gray;
+  .준수사항 {
+    color: white;
+    text-align: justify;
+    position: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
 
-   
- }
-.알림내용{
-  color: white;
-  text-align: justify;
-  text-align: left;
-  position: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  table {
+    text-align: center;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-collapse: collapse;
+  }
+  caption {
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px gray;
+  }
 
-}
+  table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.준수사항{
-  color: white;
-  text-align: justify;
-  position: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-}
+  td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 3px 3px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.39);
+  }
 
-table{
-  text-align: center;
-  color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-  border-collapse: collapse;
-
-}
-caption{
-  color: white;
-   text-align: center;
-   padding: 30px 0px;
-   font-size: 1.5rem;
-   text-shadow: 2px 2px 1px gray;
- 
-}
-
-table{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-}
-
-td{
-  border: 1px solid white;
-  border-collapse: collapse;
-  padding:3px 3px;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.39);
-
-
-}
-
-th{
-  border: 1px solid white;
-  border-collapse: collapse;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.767);
-
-}
+  th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.767);
+  }
 
   .foot {
     background-color: var(--background-color);
@@ -249,5 +238,13 @@ th{
     width: 100%;
     margin: 0px;
     padding: 0px;
+
+    display: flex;
+    filter: grayscale(50%);
   }
 
+img {
+  width:100px ;
+  filter: none;
+  
+}
