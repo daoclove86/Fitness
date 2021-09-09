@@ -1,0 +1,284 @@
+/* Global */
+:root {
+  --text-color: #b9b9b9;
+  --background-color: #041104;
+  --accent-color: #4c8c4a;
+}
+
+* {
+  /* Tells the browser to account for any border and 
+    padding in the values you specify for an element's 
+    width and height. */
+  box-sizing: border-box;
+  padding: 0%;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Nav container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12px;
+  background-color: var(--background-color);
+}
+
+/* Logo with text */
+.navbar__logo {
+  font-size: 24px;
+  color: var(--text-color);
+  padding: 0%;
+}
+
+.navbar__logo i {
+  color: var(--accent-color);
+}
+
+/* Menu */
+.navbar__menu {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding-left: 0;
+}
+
+/* Icons */
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+/* Toggle button */
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+/* For small screen */
+@media screen and (max-width: 768px) {
+  /* Nav container */
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  /* Menu */
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar__menu a {
+    /* Fill in an entire line so that user can click on any space */
+    display: block;
+  }
+
+  /* Icons */
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Toggle button */
+  .navbar__toggleBtn {
+    display: block;
+  }
+
+  /* When toggle button is clicked - active state */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+  .show {
+    height: 90vh;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% 40%;
+    opacity: 0.95;
+    filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .show-1 {
+    background-image: url(4.jpg);
+  }
+  .show-2 {
+    background-image: url(6.jpg);
+  }
+  .show-3 {
+    background-image: url(5.jpg);
+  }
+  .show-4 {
+    background-image: url(8.jpg);
+  }
+  .bg-text {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  .bg-text-1 {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  .bg-text-2 {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    border: 1px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  .foot {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 30px;
+  }
+  .알림 {
+    text-align: center;
+    padding: 10px 50px;
+    text-align: left;
+    text-align: justify;
+  }
+  .알림-본내용 {
+    text-align: left;
+    text-align: justify;
+  }
+  main p.size caption {
+    font-size: 20px;
+  }
+  /* main { */
+  /* background-color: #4c8c4a; */
+}
+div.역대회장 {
+  /* background-color: #4c8c4a; */
+  text-align: center;
+  border: px solid #ffffff;
+}
+table {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+div.준수상황 {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+caption,
+span {
+  /* border: 2px solid #003300;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px; */
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+
+  /* border: 2px solid #003300;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px; */
+}
+th {
+  text-align: center;
+  border: 1px solid;
+}
+td {
+  border: 1px solid;
+  padding: 5px;
+}
+
+article > div > img {
+  width: 100%;
+}
+article {
+  margin: 0;
+}
+.벤츠 {
+  margin-top: 3px;
+}
+
+main {
+  /* background-image: url(main.jpg); */
+  background-size: cover;
+  /* color: #bbb3b3; */
+  /* filter: grayscale(100%); */
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
