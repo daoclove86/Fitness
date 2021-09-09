@@ -157,8 +157,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 300px;
-    padding: 20px;
+    width: 250px;
+    padding: 10px;
     text-align: center;
   }
 
